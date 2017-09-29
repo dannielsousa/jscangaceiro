@@ -23,11 +23,11 @@ class Negociacao {
         Quando o nome da propriedade tem o mesmo nome da variável que esrá atribuiída como seru valor, podemos declarar nosso objeto desta forma:
     */
 
-    contructor(_data, _quantidade, _valor) {
+    constructor(_data, _quantidade, _valor) {
 
         //Object.assign(this, { _data: new Date(_data.getTime()), _quandiade, _valor }); Para melhorar a legibilidade, todapropriedade que precisa 
         //ser alterada antes da atribução, sera atribuida individualmente.
-        Object.assign(this, {_quantidade, _valor});
+        Object.assign(this, { _quantidade, _valor });
         this._data = new Date(_data.getTime());
         Object.freeze(this);
         
